@@ -14,8 +14,7 @@ public class ProductsTests extends SauceDemoBaseWebTest {
     public void beforeTest(){
         authenticateWithStandardUser();
     }
-
-    // Извеждаме повторния код за логин
+    
     private void authenticateWithStandardUser() {
         loginPage.navigate();
         loginPage.submitLoginForm(TestData.STANDARD_USER_USERNAME.getValue(), TestData.STANDARD_USER_PASSWORD.getValue());
